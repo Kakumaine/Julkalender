@@ -1,0 +1,16 @@
+body {
+    background-image: url(329374.jpg);
+}
+
+.row {
+    text-align: center;
+}
+    
+.lucka {
+    display: inline-block;
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    background: tan;
+}
