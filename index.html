@@ -8,8 +8,6 @@
         <h1 style="color: azure">Julkalender</h1>
 
         <script>
-            $(document).ready(function(){
-
                 fetch("https://quotes.stormconsultancy.co.uk/random.json")
 
                 .then(function(response){
@@ -21,17 +19,14 @@
                     createListFromRandomData();
                 });
 
-                createListFromRandomData();
-
                 var levels = 24;
                 var output = '';
 
                 for (var row = 0 ; row < levels; row++) {
-                    output += "<a href='#' class='open' onclick=><div class='lucka'></div>";
+                    output += "<a href='#' class='open'><div class='lucka'></div>";
                 }
 
                 document.write(output);
-            });
             </script>
     </body>
 </html>
