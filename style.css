@@ -1,5 +1,6 @@
 body {
     background-image: url(329374.jpg);
+    background-size: cover;
 }
 
 .row {
@@ -9,8 +10,10 @@ body {
 .lucka {
     display: inline-block;
     margin: 20px;
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     border: 1px solid black;
-    background: tan;
+    background-image: url(20091214-christmas-present.jpg);
+    background-size: cover;
+    background-position-y: center;
 }

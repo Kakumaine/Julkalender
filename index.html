@@ -8,9 +8,9 @@
         <h1 style="color: azure">Julkalender</h1>
 
         <script>
-            $(document).ready();
-            
-            fetch("https://quotes.stormconsultancy.co.uk/random.json")
+            $(document).ready(function(){
+
+                fetch("https://quotes.stormconsultancy.co.uk/random.json")
 
                 .then(function(response){
                     return response.json();
@@ -21,20 +21,17 @@
                     createListFromRandomData();
                 });
 
-                var levels = 4;
+                createListFromRandomData();
+
+                var levels = 24;
                 var output = '';
 
-                for (var row = 4; row <= levels; row++) {
-                    output += '<div class="row">';
-                    
-                    for (var i = 0; i < row; i++) {
-                        output += '<div class="lucka"></div>'
-                    }
-
-                output += '</div>';
+                for (var row = 0 ; row < levels; row++) {
+                    output += "<a href='#' class='open' onclick=><div class='lucka'></div>";
                 }
 
                 document.write(output);
+            });
             </script>
     </body>
 </html>
