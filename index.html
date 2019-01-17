@@ -19,14 +19,32 @@
                     createListFromRandomData();
                 });
 
-                var levels = 24;
+                var levels = 25;
                 var output = '';
+                var dag = new Date().getDate();
 
-                for (var row = 0 ; row < levels; row++) {
-                    output += "<a href='#' class='open'><div class='lucka'></div>";
+               
+
+                function luckOppning(){
+                    if(dag==row){
+                        window.alert(createListFromRandomData());
+                    } else if(dag!=row){
+                        window.alert("Vänta vänta...");
+                    } else if(dag>=row){
+                        window.alert("Du har redan öppnat denna lucka!");
+                    } else {
+                        window.alert("Error");
+                    }
+                }
+
+
+                for (var row = 1 ; row < levels; row++) {
+                    output += "<a href='#' onclick='luckOppning()'><div class='lucka'>"+row+"</div>";
                 }
 
                 document.write(output);
             </script>
+
+        <div class="clock"></div>
     </body>
 </html>
