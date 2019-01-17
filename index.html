@@ -23,7 +23,7 @@
                 var output = '';
                 var dag = new Date().getDate();
 
-               
+
 
                 function luckOppning(){
                     if(dag==row){
@@ -41,6 +41,14 @@
                 for (var row = 1 ; row < levels; row++) {
                     output += "<a href='#' onclick='luckOppning()'><div class='lucka'>"+row+"</div>";
                 }
+
+                // if(dag==row){
+                //     "<style>.lucka {background-color: white;}</style>"
+                // } else if(dag!=row){
+                //     "<style>.lucka {background-color: black;}</style>"
+                // } else if(dag>=row){
+                //     "<style>.lucka {background-image: url(20091214-christmas-present.jpg);}</style>"
+                // }
 
                 document.write(output);
             </script>
